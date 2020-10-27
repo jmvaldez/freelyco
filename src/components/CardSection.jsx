@@ -9,16 +9,16 @@ const CARD_ELEMENT_OPTIONS = {
       fontFamily: "sans-serif",
       fontSmoothing: "antialiased",
       "::placeholder": {
-        color: "#000000"
-      }
+        color: "#000000",
+      },
     },
     invalid: {
       color: "#e5424d",
       ":focus": {
-        color: "#303238"
-      }
-    }
-  }
+        color: "#303238",
+      },
+    },
+  },
 };
 
 function CardSection() {
