@@ -18,13 +18,13 @@ const MainNavbar = () => {
                 <Link to="/about">About Us</Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact-us">Contact</Link>
               </li>
               <li>
-                <Link to="/faqs">FAQs</Link>
+                <Link to="/faq">FAQs</Link>
               </li>
               <li>
-                <Link to="/terms">Terms of use</Link>
+                <Link to="/shop">Shop</Link>
               </li>
             </ul>
           </nav>

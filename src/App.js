@@ -7,7 +7,11 @@ import MainNavbar from "./components/navigation/MainNavbar";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Home } from './components/Home';
 import { About } from './components/About';
-import { NoMatch } from './components/NoMatch';
+import { Contact } from './components/Contact';
+import {Faqs} from './components/Faqs';
+import {Shop} from './components/Shop';
+import { Error } from './components/Error';
+
 
 // const stripePromise = loadStripe("pk_test_51HMQW2CeaSGVLhh56cKOf66VR380wDCHM1yPj7K3TGRpnySCFEuWirSjJd3uWfBVj2A66XMhy1QGTNTLafVRjNX500XtqeTBY7");
 
@@ -19,7 +23,10 @@ const App = () => {
   <Switch>
   <Route exact path="/" component={Home} />
   <Route path="/about" component={About} />
-  <Route component={NoMatch} />
+  <Route path="/contact-us" component={Contact} />
+  <Route path="/faq" component={Faqs} />
+  <Route path="/shop" component={Shop} />
+  <Route component={Error} />
 </Switch>
   </BrowserRouter>
 </React.Fragment>
