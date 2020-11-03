@@ -1,41 +1,26 @@
-header img {
+/* header img {
   height: 80px;
   margin-left: 40px;
-}
-body {
-  height: 125vh;
-  background-color: whitesmoke;
+} */
+
+.jumbotron {
   background-size: cover;
-  font-family: sans-serif;
-  margin-top: 80px;
-  padding: 30px;
+  background-position: center;
 }
-
-main {
-  color: white;
+#navLogo {
+  height: 18vh;
+  margin-left: 5vw;
+  margin-bottom: 13vh;
 }
-
-header {
-  background-color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 80px;
+#navList {
   display: flex;
-  align-items: center;
-  box-shadow: 0 0 25px 0 black;
 }
-
-header * {
-  display: inline;
-}
-
-header li {
+#navList li {
+  display: inline-block;
   margin: 20px;
 }
 
-header li a {
+#navList a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
@@ -46,6 +31,6 @@ header li a {
 
 .loginBtn {
   position: absolute;
-  right: 0;
+  right: 1vw;
   top: 6vh;
 }
