@@ -3,9 +3,9 @@ import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import CheckoutForm from "./CheckOutForm";
 
-const stripePromise = loadStripe(
-  "pk_test_51HMQW2CeaSGVLhh56cKOf66VR380wDCHM1yPj7K3TGRpnySCFEuWirSjJd3uWfBVj2A66XMhy1QGTNTLafVRjNX500XtqeTBY7"
-);
+const STRIPE_API_KEY = process.env.REACT_APP_STRIPE_API_KEY;
+
+const stripePromise = loadStripe(STRIPE_API_KEY);
 
 export const Shop = () => (
   <div>
