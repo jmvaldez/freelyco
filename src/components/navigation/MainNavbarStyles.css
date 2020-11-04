@@ -7,13 +7,17 @@
   background-size: cover;
   background-position: center;
 }
+
 #navLogo {
   height: 18vh;
   margin-left: 5vw;
-  margin-bottom: 13vh;
+  margin-bottom: 21vh;
 }
 #navList {
-  display: flex;
+  font-weight: 700;
+  font-size: 1.25rem;
+  position: relative;
+  left: 3vw;
 }
 #navList li {
   display: inline-block;
@@ -30,7 +34,17 @@
 }
 
 .loginBtn {
-  position: absolute;
-  right: 1vw;
-  top: 6vh;
+  position: relative;
+  left: 92vw;
+  bottom: 44vh;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  color: azure;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
 }
