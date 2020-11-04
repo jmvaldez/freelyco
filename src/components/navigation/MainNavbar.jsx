@@ -1,10 +1,11 @@
 import React from "react";
 import "./MainNavbarStyles.css";
 import FreelyLogo from "../../layout/layoutImages/FreelyLogoTransparent.png";
-import BGImage from "../../layout/layoutImages/noah-silliman-vhInzGLpnyI-unsplash.jpg";
+import BGImage from "../../layout/layoutImages/adrian-TvN54bnuQg8-unsplash.jpg";
 import { Link } from "react-router-dom";
 import LoginModal from "../login/LoginModal";
 import useModal from "../login/useModal";
+import { GiCampingTent } from "react-icons/gi";
 import { Jumbotron, Container } from "reactstrap";
 
 const MainNavbar = () => {
@@ -37,13 +38,16 @@ const MainNavbar = () => {
               <li>
                 <Link to="/shop">Shop</Link>
               </li>
-              <li>
-                <button className="loginBtn" onClick={toggle}>
-                  Login
-                </button>
-                <LoginModal isShowing={isShowing} hide={toggle} />
-              </li>
+              <li></li>
             </ul>
+            <div>
+              <button className="loginBtn" onClick={toggle}>
+                Login
+                <GiCampingTent size="35px" />
+              </button>
+            </div>
+
+            <LoginModal isShowing={isShowing} hide={toggle} />
           </Container>
         </Jumbotron>
       </div>
