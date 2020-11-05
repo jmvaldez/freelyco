@@ -1,0 +1,16 @@
+.shopCategoryContainer {
+  position: absolute;
+  top: 58vh;
+  left: 2vw;
+  opacity: 1;
+}
+.shopCategoryContainer:hover {
+  opacity: 0.7;
+}
+.imageLabel {
+  position: relative;
+  bottom: 33vh;
+  left: 9vw;
+  font-size: 4rem;
+  color: white;
+}

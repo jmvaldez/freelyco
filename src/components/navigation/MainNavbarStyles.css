@@ -18,6 +18,7 @@
   font-size: 1.25rem;
   position: relative;
   left: 3vw;
+  top: 4.5vh;
 }
 #navList li {
   display: inline-block;
