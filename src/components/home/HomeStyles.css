@@ -1,4 +1,39 @@
-.shopCategoryContainer {
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 0 -5px;
+  position: relative;
+  bottom: 4vh;
+  padding: 0px 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  text-align: center;
+  background-color: #f1f1f1;
+  opacity: 1;
+}
+
+.card:hover {
+  opacity: 0.7;
+}
+
+/* .shopCategoryContainer {
   position: absolute;
   top: 58vh;
   left: 2vw;
@@ -6,11 +41,25 @@
 }
 .shopCategoryContainer:hover {
   opacity: 0.7;
-}
+} */
 .imageLabel {
   position: relative;
-  bottom: 33vh;
-  left: 9vw;
+  top: 33vh;
   font-size: 4rem;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    right: 10vw;
+  }
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .imageLabel {
+    top: 35vh;
+    left: 38vw;
+  }
 }
